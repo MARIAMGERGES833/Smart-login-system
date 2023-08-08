@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login System</title>
+    <!--+++  favicon   ++++-->
+    <link rel="icon" href="vector-illustration-isolated-white-background-login-button-icon-login-icon-button-126999580.webp">
+    <!--+++  foooooooonts   ++++-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+
+    <!--+++  sweetalert2   ++++-->
+    <link rel="stylesheet" href="css/sweetalert2.min (1).css">
+
+    <!--+++  fontawesome   ++++-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--+++   bootstrap  ++++-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--+++   main style sheet ++++-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container d-flex align-items-center justify-content-center vh-100">
+        <div class="form-box d-block  text-center d-flex flex-column">
+            <h2>Sign Up</h2>
+            <div class="form-group mb-4">
+                <i class="fa-solid fa-user"></i>
+                    <input id="userName" type="text" class="form-control"  placeholder="Enter Your Name" name="name">
+
+
+            </div>
+            <div class="form-group mb-4">
+                <i class="fa-solid fa-envelope"></i>
+                    <input id="userEmail" class="form-control" type="email"  name="email" placeholder="Enter Your Email" name="email">
+
+
+            </div>
+            <div class="form-group mb-4">
+                <i class="fa-solid fa-lock"></i>
+                <input id="userPassword" class="form-control pe-5" type="password" placeholder="Enter Your Password"  name="password" />
+
+            </div>
+            <p class="d-none">success</p>
+            <button id="signUp" class="btn btnSignUp d-block mb-4" type="submit">Sign Up</button>
+            <div class="group"> <span>You have an account? </span><a id="ankorSignIn" href="#">Log in</a>
+            </div>
+        </div>
+
+
+        <div class="form-box2 d-none  text-center d-flex flex-column">
+            <h2>Log in</h2>
+            <div class="form-group mb-5">
+                <i class="fa-solid fa-envelope"></i>
+                <input id="userEmailLogIn" class="form-control" type="email" name="email" placeholder="Enter Your Email"/>
+
+            </div>
+            <div class="form-group mb-5">
+                <i class="fa-solid fa-lock"></i>
+                <input id="userPasswordLogIn" class="form-control pe-5" type="password" name="password" placeholder="Enter Your Password" />
+
+            </div>
+            <p class="d-none">success</p>
+            <button id="Login" class="btn btnSignUp d-block mb-5" type="submit">Login</button>
+            <div class="group"> <span>Don’t have an account? </span><a id="ankorSignUp" href="#">Sign up</a>
+            </div>
+        </div>
+
+
+
+        <div class="welcomeUser text-center d-none ">
+<div class="logOutGroup"> 
+               <button class="btn btn-warning ">Log Out </button>
+               <i class="text-warning ps-5 fa-solid fa-right-from-bracket"></i>
+</div>            <h4 class="welcome"> Welcome </h4>
+            <p class="text-light fs-2">thanks for you </p>
+        </div>
+    </div>
+
+<section>
+    
+</section>
+
+    <script src="js/sweetalert2.all.min (1).js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
